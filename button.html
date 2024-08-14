@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>선생님호출!!</title>
+    <style>
+        body {
+            text-align: center; /* 가운데 정렬을 위한 스타일 */
+        }
+        img {
+            width: 50%; /* 이미지 너비 */
+            height: auto; /* 비율을 유지하면서 높이 자동 조정 */
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://th.bing.com/th/id/R.af5f4b78ab3b8ca63008120a51749585?rik=RgmRKk1r03oiaw&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbuttons%2fbuttons_PNG52.png&ehk=sO0XVwxqF%2bwO9CsUIXTWSvyBwUfRlACe0oAl7YPOLHE%3d&risl=&pid=ImgRaw&r=0" alt="Button Image" id="soundButton"/>
+
+    <button id="playSoundButton">소리 재생</button>
+
+    <audio id="audio" src="99AD114C5D0D12D40C.mp3" preload="auto"></audio>
+
+    <script>
+        document.getElementById('playSoundButton').addEventListener('click', function() {
+            var audio = document.getElementById('audio');
+            audio.play();
+        });
+    </script>
+</body>
+</html>
